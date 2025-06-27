@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-community
+chromadb
+ollama
+asyncio
+python-multipart
