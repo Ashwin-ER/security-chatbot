@@ -35,6 +35,13 @@ This is a demonstration of a secure, lightweight AI chatbot designed to assist u
 - **Deployment:** Hugging Face Spaces (Docker)
 
 ---
+  ```bash
+uvicorn main:app --reload
+```
+
+```bash
+python ingest.py
+```
 
 ## 🏛️ Architecture
 The application uses a Retrieval-Augmented Generation (RAG) architecture to provide accurate, context-aware answers grounded in a specific knowledge base.
@@ -60,10 +67,4 @@ subgraph "Hugging Face Space (Docker Container)"
         H[Knowledge Base: .md files] --> I(ingest.py Script);
         I -- Chunks Docs --> E;
         E -- Creates Embeddings --> F;
-  ```bash
-uvicorn main:app --reload
-```
 
-```bash
-python ingest.py
-```
