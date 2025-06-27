@@ -42,11 +42,7 @@ The application uses a Retrieval-Augmented Generation (RAG) architecture to prov
 <details>
 <summary>Click to view Architecture Diagram</summary>
 
-```mermaid
-graph TD
-    subgraph User Device
-        A[User in Web App] --> B{Chat Interface (HTML/JS)};
-```
+
 
 subgraph "Hugging Face Space (Docker Container)"
         B -- HTTPS Request --> C[API Endpoint (FastAPI)];
